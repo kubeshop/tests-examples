@@ -1,0 +1,60 @@
+2024-12-12 07:51:43,088 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2024-12-12 07:51:43,107 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.5/bin/user.properties
+2024-12-12 07:51:43,109 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.5/bin/system.properties
+2024-12-12 07:51:43,126 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2024-12-12 07:51:43,126 INFO o.a.j.JMeter: Version 5.5
+2024-12-12 07:51:43,126 INFO o.a.j.JMeter: java.version=1.8.0_275
+2024-12-12 07:51:43,126 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2024-12-12 07:51:43,126 INFO o.a.j.JMeter: os.name=Linux
+2024-12-12 07:51:43,127 INFO o.a.j.JMeter: os.arch=amd64
+2024-12-12 07:51:43,127 INFO o.a.j.JMeter: os.version=6.10.11-linuxkit
+2024-12-12 07:51:43,127 INFO o.a.j.JMeter: file.encoding=UTF-8
+2024-12-12 07:51:43,127 INFO o.a.j.JMeter: java.awt.headless=true
+2024-12-12 07:51:43,127 INFO o.a.j.JMeter: Max memory     =1073741824
+2024-12-12 07:51:43,127 INFO o.a.j.JMeter: Available Processors =10
+2024-12-12 07:51:43,133 INFO o.a.j.JMeter: Default Locale=English (EN)
+2024-12-12 07:51:43,135 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2024-12-12 07:51:43,135 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.5
+2024-12-12 07:51:43,135 INFO o.a.j.JMeter: user.dir  =/data
+2024-12-12 07:51:43,136 INFO o.a.j.JMeter: PWD       =/data
+2024-12-12 07:51:43,136 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: 155da2bb08a7 FullName: 155da2bb08a7
+2024-12-12 07:51:43,172 INFO o.a.j.s.FileServer: Default base='/data'
+2024-12-12 07:51:43,174 INFO o.a.j.s.FileServer: Set new base='/data'
+2024-12-12 07:51:43,357 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2024-12-12 07:51:43,515 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2024-12-12 07:51:43,521 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2024-12-12 07:51:43,529 INFO o.a.j.s.SaveService: Loading file: jmeter-executor-smoke-negative.jmx
+2024-12-12 07:51:43,603 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-12 07:51:43,604 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-12 07:51:43,604 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-12 07:51:43,604 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2024-12-12 07:51:43,604 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2024-12-12 07:51:43,604 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2024-12-12 07:51:44,376 INFO o.a.j.JMeter: Creating summariser <summary>
+2024-12-12 07:51:44,388 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2024-12-12 07:51:44,394 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-12-12 07:51:44,395 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2024-12-12 07:51:44,405 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2024-12-12 07:51:44,406 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2024-12-12 07:51:45,154 INFO o.a.j.JMeter: Running test (1733986305154)
+2024-12-12 07:51:45,245 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2024-12-12 07:51:45,247 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2024-12-12 07:51:45,247 INFO o.a.j.e.StandardJMeterEngine: Thread will stop on error
+2024-12-12 07:51:45,248 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2024-12-12 07:51:45,272 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2024-12-12 07:51:45,272 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2024-12-12 07:51:45,276 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2024-12-12 07:51:45,318 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = 155da2bb08a7
+2024-12-12 07:51:45,327 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2024-12-12 07:51:45,329 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2024-12-12 07:51:45,329 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2024-12-12 07:51:45,330 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2024-12-12 07:51:45,330 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2024-12-12 07:51:45,574 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2024-12-12 07:51:45,583 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2024-12-12 07:51:45,583 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2024-12-12 07:51:45,690 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2024-12-12 07:51:45,695 INFO o.a.j.u.SSLManager: KeyStore created OK
+2024-12-12 07:51:45,695 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2024-12-12 07:51:47,284 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2024-12-12 07:51:47,287 INFO o.a.j.r.ResultCollector: Shutdown hook ended
