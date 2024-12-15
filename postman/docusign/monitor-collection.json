@@ -1,0 +1,183 @@
+{
+    "item": [
+        {
+            "name": "DataSet",
+            "description": "The DataSet resource provides methods that allow you to fetch organization event data. The `dataSet` path parameter must be set to `monitor`.",
+            "item": [
+                {
+                    "id": "b1a71ab6-752d-4baf-aea5-d498d373ca89",
+                    "name": "Gets customer event data for an organization.",
+                    "request": {
+                        "name": "Gets customer event data for an organization.",
+                        "description": {
+                            "content": "Gets customer event data for the organization that owns the integration key.\n\nThe results for this endpoint are paginated by event timestamp. Use the `cursor` parameter to specify where the query begins in the dataset. Use the `limit` parameter to set the number of records returned.\n\n\n### Related topics\n\n- [How to get monitoring data](/docs/monitor-api/how-to/get-monitoring-data/)\n",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "api",
+                                "v{{version}}",
+                                "datasets",
+                                ":dataSetName",
+                                "stream"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": true,
+                                    "description": {
+                                        "content": "Specifies a pointer into the dataset where your query will begin. You can either provide an ISO DateTime or a string cursor (from the `endCursor` value in the response). If no value is provided, the query begins from seven days ago.\n\nFor example, to fetch event data beginning from January 1, 2022, set this value to `2022-01-01T00:00:00Z`. The response will include data about events starting from that date in chronological order. The response also includes an `endCursor` property. To fetch the next page of event data, call this endpoint again with `cursor` set to the previous `endCursor` value.\n",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "cursor",
+                                    "value": "<string>"
+                                },
+                                {
+                                    "disabled": true,
+                                    "description": {
+                                        "content": "The maximum number of records to return. The default value is 1000.",
+                                        "type": "text/plain"
+                                    },
+                                    "key": "limit",
+                                    "value": "1000"
+                                }
+                            ],
+                            "variable": [
+                                {
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "dataSetName",
+                                    "disabled": false,
+                                    "description": {
+                                        "content": "(Required) Must be `monitor`.",
+                                        "type": "text/plain"
+                                    }
+                                }
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "GET",
+                        "body": {},
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "b6ef387d-5f63-4890-9484-7edd4e9edfc7",
+                            "name": "Success",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "api",
+                                        "v{{version}}",
+                                        "datasets",
+                                        ":dataSetName",
+                                        "stream"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "disabled": true,
+                                            "description": {
+                                                "content": "Specifies a pointer into the dataset where your query will begin. You can either provide an ISO DateTime or a string cursor (from the `endCursor` value in the response). If no value is provided, the query begins from seven days ago.\n\nFor example, to fetch event data beginning from January 1, 2022, set this value to `2022-01-01T00:00:00Z`. The response will include data about events starting from that date in chronological order. The response also includes an `endCursor` property. To fetch the next page of event data, call this endpoint again with `cursor` set to the previous `endCursor` value.\n",
+                                                "type": "text/plain"
+                                            },
+                                            "key": "cursor",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "disabled": true,
+                                            "description": {
+                                                "content": "The maximum number of records to return. The default value is 1000.",
+                                                "type": "text/plain"
+                                            },
+                                            "key": "limit",
+                                            "value": "1000"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "header": [
+                                    {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "description": {
+                                            "content": "Added as a part of security scheme: apikey",
+                                            "type": "text/plain"
+                                        },
+                                        "key": "Authorization",
+                                        "value": "<API Key>"
+                                    }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n  \"endCursor\": \"<string>\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": [],
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    }
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "apikey",
+        "apikey": [
+            {
+                "type": "any",
+                "value": "Authorization",
+                "key": "key"
+            },
+            {
+                "type": "any",
+                "value": "{{apiKey}}",
+                "key": "value"
+            },
+            {
+                "type": "any",
+                "value": "header",
+                "key": "in"
+            }
+        ]
+    },
+    "event": [],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "https://lens.docusign.net"
+        },
+        {
+            "key": "version",
+            "value": "2.0"
+        }
+    ],
+    "info": {
+        "_postman_id": "1cc89faa-ea17-435a-84cd-5c5a652f087f",
+        "name": "Monitor API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "An API for an integrator to access the features of DocuSign Monitor"
+    }
+}
